@@ -242,7 +242,7 @@ namespace MahApps.Metro.Application1
         private async void MetroWindow_Loaded(object sender, RoutedEventArgs e)
         {
             if (Properties.Settings.Default.mac != null)
-                this.Title += " - Subnet: " + Properties.Settings.Default.subnet + ".1";
+                this.Title += " - Subnet: " + Properties.Settings.Default.subnet + ".250";
 
             if ((bool)Properties.Settings.Default.firstRun == true)
             {
