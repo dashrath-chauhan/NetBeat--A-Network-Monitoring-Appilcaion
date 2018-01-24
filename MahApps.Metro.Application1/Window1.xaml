@@ -1,0 +1,50 @@
+﻿<Controls:MetroWindow x:Class="MahApps.Metro.Application1.Window1"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      Title="Settings"
+                      TitleCaps="False"
+                      Height="400"
+                      Width="400"
+                      ShowIconOnTitleBar="True"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      WindowTransitionsEnabled="True"
+                      ResizeMode="NoResize"
+                      WindowState="Normal"
+                      ShowMinButton="False"
+                      Icon="favicon.ico"
+                      SaveWindowPosition="True"
+                      WindowStartupLocation="CenterScreen" Loaded="MetroWindow_Loaded" Closed="MetroWindow_Closed" Closing="MetroWindow_Closing">
+    
+    <Controls:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <Grid Width="{TemplateBinding Width}" 
+                 Height="{TemplateBinding Height}"
+                 Margin="4"
+                 Background="Transparent"
+                 RenderOptions.EdgeMode="Aliased"
+                 RenderOptions.BitmapScalingMode="HighQuality">
+                <Image Source="favicon.ico"></Image>
+                <Grid Width="{TemplateBinding Width}" />
+            </Grid>
+        </DataTemplate>
+    </Controls:MetroWindow.IconTemplate>
+
+    <Grid Margin="0">
+        <StackPanel x:Name="login_form" Height="400" Width="360" Orientation="Vertical">
+            <TextBlock Text="NetBeat Admin" Margin="0 80 0 30" HorizontalAlignment="Center" FontSize="25" Foreground="#FF0390B0"/>
+            <TextBlock Text="Enter admin password:" Margin="0 0 0 5"></TextBlock>
+            <PasswordBox x:Name="pass" Margin="0 0 0 5" Controls:TextboxHelper.ClearTextButton="True"></PasswordBox>
+            <Button Margin="0 0 0 10" Click="Button_Click">Login</Button>
+            <TextBlock x:Name="err" Foreground="#FFF10F0F" HorizontalAlignment="Center" Visibility="Hidden">Invalid password.</TextBlock>
+        </StackPanel>
+        <StackPanel x:Name="chng_form" Height="400" Width="360" Orientation="Vertical">
+            <TextBlock Text="NetBeat Admin" Margin="0 60 0 30" HorizontalAlignment="Center" FontSize="25" Foreground="#FF0390B0"/>
+            <TextBlock Text="Enter subnet:" Margin="0 0 0 5"></TextBlock>
+            <TextBox x:Name="subnet" Margin="0 0 0 8" Controls:TextboxHelper.ClearTextButton="True"></TextBox>
+            <TextBlock Text="Enter MAC address:" Margin="0 0 0 5"></TextBlock>
+            <TextBox x:Name="mac" Margin="0 0 0 5" Controls:TextboxHelper.ClearTextButton="True"></TextBox>
+            <Button Margin="0 0 0 10" Click="Button_Click_1">Save</Button>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
