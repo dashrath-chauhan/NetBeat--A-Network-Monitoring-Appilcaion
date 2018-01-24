@@ -24,6 +24,9 @@ namespace MahApps.Metro.Application1
             chng_form.Visibility = Visibility.Hidden;
         }
 
+
+        
+
         private void MetroWindow_Closed(object sender, EventArgs e)
         {
             if (not_re)

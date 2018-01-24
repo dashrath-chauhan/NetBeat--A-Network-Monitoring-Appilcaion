@@ -42,3 +42,9 @@ C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\obj
 C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\obj\Debug\MahApps.Metro.Application1.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\obj\Debug\MahApps.Metro.Application1.exe
 C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\obj\Debug\MahApps.Metro.Application1.pdb
+C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\bin\Debug\LiveCharts.dll
+C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\bin\Debug\LiveCharts.pdb
+C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\bin\Debug\LiveCharts.xml
+C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\admin\Desktop\MahApps.Metro.Application1\MahApps.Metro.Application1\bin\Debug\LiveCharts.Wpf.xml

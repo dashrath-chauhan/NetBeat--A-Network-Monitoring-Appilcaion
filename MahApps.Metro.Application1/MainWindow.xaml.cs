@@ -11,6 +11,8 @@ using System.ComponentModel;
 using MahApps.Metro.Controls.Dialogs;
 using System.Collections.Generic;
 using System.Diagnostics;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace MahApps.Metro.Application1
 {
@@ -163,12 +165,19 @@ namespace MahApps.Metro.Application1
             dataGridView1.Items.Clear();
             textBlock.Visibility = Visibility.Visible;
             button1.Content = "Restart Scan";
-            
+            button2.Visibility = Visibility.Visible;
             myThread = new Thread(() => scan(Properties.Settings.Default.subnet.ToString()));
             myThread.Start();
 
         }
-
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {      
+            if(button2.Content.Equals("Chart View"))
+                button2.Content = "Grid View";
+            else
+                button2.Content = "Chart View";
+        }
+        
         public string GetMacAddress(string ipAddress)
         {
             string macAddress = string.Empty;

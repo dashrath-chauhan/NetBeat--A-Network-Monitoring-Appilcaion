@@ -1,6 +1,7 @@
 ﻿<Controls:MetroWindow x:Class="MahApps.Metro.Application1.MainWindow"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
                       xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
                       Title="NetBeat"
                       TitleCaps="False"
@@ -87,10 +88,10 @@
                 </StackPanel>
                 <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Width="418" HorizontalAlignment="Right">
                     <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Starting Scan, please wait..." TextAlignment="Right" VerticalAlignment="Center" Visibility="Hidden"/>
+                    <Button  Width="170" Margin="0 15 200 -54" Height="39" Click="Button_Click_3" x:Name="button2" Content="Chart View" HorizontalAlignment="Right" Visibility="Hidden"/>
                     <Button  Width="170" Margin="0 15 0 0" Height="39" Click="Button_Click" x:Name="button1" Content="Start Scan" HorizontalAlignment="Right"/>
                 </StackPanel>
             </StackPanel>
-
         </StackPanel>
     </Grid>
 </Controls:MetroWindow>
