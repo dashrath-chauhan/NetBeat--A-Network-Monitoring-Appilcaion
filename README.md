@@ -11,3 +11,5 @@ My future plans for this application:
   1. Find the data usage of the host if it is connected to the internet.
   2. Current version shows data in grid view, wants to design a graph based statistics for both particular host and entire subnet.
   3. Find the list of URLs that the host has visited on internet.
+  4. Grap ports for a ipaddress, and then grap tcp/ip packets for that particular ipaddress(i.e. same thing that wireshark does 
+  but i want to implelement this without using any external tools).
